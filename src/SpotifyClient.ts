@@ -1,7 +1,11 @@
 import axios, { AxiosInstance, AxiosRequestConfig } from 'axios';
+import { Player } from './Player';
 
 export class SpotifyClient {
     private axiosInstance: AxiosInstance;
+
+    // namespace
+    public readonly player: Player;
 
     constructor(accessToken: string) {
         const axiosRequestConfig: AxiosRequestConfig = {
@@ -11,10 +15,7 @@ export class SpotifyClient {
             },
         };
         this.axiosInstance = axios.create(axiosRequestConfig);
-    }
 
-    public pause(): void {
-        const url = '/me/player/play';
-        this.axiosInstance.put(url);
+        this.player = new Player(this.axiosInstance);
     }
 }
