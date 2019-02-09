@@ -1,0 +1,20 @@
+{
+  "name": "spotify-api-typescript",
+  "version": "0.0.1",
+  "description": "because the other ones are not worthy",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/heyitsjeoff/spotify-api-typescript.git"
+  },
+  "keywords": [],
+  "author": "Jeoff Villanueva",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/heyitsjeoff/spotify-api-typescript/issues"
+  },
+  "homepage": "https://github.com/heyitsjeoff/spotify-api-typescript#readme"
+}
