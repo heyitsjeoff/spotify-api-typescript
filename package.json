@@ -8,7 +8,7 @@
     "build:ts": "npm run clean && tsc",
     "clean": "rm -rf lib",
     "lint": "tslint -p tsconfig.json",
-    "test": "echo \"Error: no test specified\"",
+    "test": "jest --config=jest.config.json",
     "verify": "npm run lint && npm run test"
   },
   "repository": {
@@ -23,10 +23,16 @@
   },
   "homepage": "https://github.com/heyitsjeoff/spotify-api-typescript#readme",
   "devDependencies": {
+    "@types/jest": "24.0.0",
     "@types/node": "10.12.24",
+    "jest": "24.1.0",
+    "ts-jest": "23.10.5",
     "ts-node": "8.0.2",
     "tslint": "5.12.1",
     "tslint-config-airbnb": "5.11.1",
     "typescript": "3.3.3"
+  },
+  "dependencies": {
+    "axios": "0.18.0"
   }
 }

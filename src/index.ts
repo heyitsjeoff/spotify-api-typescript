@@ -1,1 +1,1 @@
-
+export { SpotifyClient } from './SpotifyClient';
